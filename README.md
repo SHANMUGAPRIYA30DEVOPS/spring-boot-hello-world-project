@@ -43,6 +43,20 @@
 
 - **To run all the test cases**
   <br/>```mvn test```
+
+  - **To run a particular test class**
+  <br/>```mvn -Dtest=HelloWorldControllerTest test```
+  <br/>or
+  <br/>```mvn -Dtest=HelloWorldApplicationTests test```
+
+## How to build artifact in host system (openjdk,maven needs to be installed)
+
+git clone
+
+mvn clean package (where pom.xml is present)
+
+java -jar target/*.jar
+
 ## How to Run Docker commands
 
 docker build -t saipriya98/spring_boot:0.0.1
@@ -67,7 +81,4 @@ CONTAINER ID   IMAGE                          COMMAND               CREATED     
 a1a60c5ab922   saipriya98/spring_boot:0.0.1   "java -jar app.jar"   11 minutes ago   Up 11 minutes   0.0.0.0:80->8081/tcp, :::80->8081/tcp   mycontainer1
 
 
-- **To run a particular test class**
-  <br/>```mvn -Dtest=HelloWorldControllerTest test```
-  <br/>or
-  <br/>```mvn -Dtest=HelloWorldApplicationTests test```
+

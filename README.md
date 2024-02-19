@@ -59,7 +59,7 @@ java -jar target/*.jar
 
 ## How to Run Docker commands
 
-docker build -t saipriya98/spring_boot:0.0.1
+docker build -t saipriya98/spring_boot:0.0.1 .
 
 docker run --name mycontainer -p 80:8081 saipriya98/spring_boot:0.0.1
 

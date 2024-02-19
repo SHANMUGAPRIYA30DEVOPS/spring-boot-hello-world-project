@@ -43,6 +43,28 @@
 
 - **To run all the test cases**
   <br/>```mvn test```
+## How to Run Docker commands
+
+docker build -t saipriya98/spring_boot:0.0.1
+
+docker run --name mycontainer -p 80:8081 saipriya98/spring_boot:0.0.1
+
+docker logs 1a5b74c32dfd
+
+docker exec -it a1a60c5ab922 bash
+
+docker login -u un -p pwd
+
+docker push saipriya98/spring_boot:0.0.1
+
+docker pull saipriya98/spring_boot:0.0.1
+
+docker run -d --name testcontainer -p 90:8081 saipriya98/spring_boot:0.0.1
+
+root@ip-172-31-18-58:~# docker ps
+CONTAINER ID   IMAGE                          COMMAND               CREATED          STATUS          PORTS                                   NAMES
+1a5b74c32dfd   saipriya98/spring_boot:0.0.1   "java -jar app.jar"   5 seconds ago    Up 4 seconds    0.0.0.0:90->8081/tcp, :::90->8081/tcp   testcontainer
+a1a60c5ab922   saipriya98/spring_boot:0.0.1   "java -jar app.jar"   11 minutes ago   Up 11 minutes   0.0.0.0:80->8081/tcp, :::80->8081/tcp   mycontainer1
 
 
 - **To run a particular test class**
